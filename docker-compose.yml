@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
 
   redis:
@@ -9,7 +11,7 @@ services:
 
   app:
     build: ./app
-    image: devops-lab:v1
+    image: devops-lab:v2
     environment:
       - REDIS_HOST=redis
     networks:
